@@ -54,11 +54,11 @@ body {
     border-bottom: 3px solid transparent;
     border-image: var(--gold-metallic) 1;
     z-index: 1000;
-    padding: 1.5rem 0;
+    padding: 0.8rem 0;
     transition: all 0.3s ease;
     box-shadow: 0 2px 20px var(--shadow-dark);
     height: auto;
-    min-height: 200px;
+    min-height: 100px;
 }
 
 .header-container {
@@ -68,8 +68,8 @@ body {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0.5rem 1rem;
-    gap: 0.8rem;
+    padding: 0.3rem 1rem;
+    gap: 0.3rem;
 }
 
 .logo-container {
@@ -88,9 +88,9 @@ body {
 
 .logo-image {
     /* keep aspect ratio, avoid stretching, and add slight padding */
-    height: 132px; /* 10% larger than before */
+    height: 60px;
     width: auto;
-    max-width: 440px; /* increased accordingly */
+    max-width: 200px;
     object-fit: contain;
     display: block;
     padding: 0.5rem;
@@ -133,12 +133,12 @@ body {
 /* Header Language Selector */
 .header-language-selector {
     display: flex;
-    gap: 2rem;
+    gap: 0.8rem;
 }
 
 .header-lang-btn {
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
     border: none;
     outline: none;
     background: transparent;
@@ -151,13 +151,13 @@ body {
     position: relative;
     overflow: visible;
     padding: 0;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     line-height: 1;
     filter: none;
 }
 
 .header-lang-btn .flag-icon {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     z-index: 1;
     position: relative;
     line-height: 1;
@@ -375,7 +375,7 @@ body {
     border: 3px solid transparent;
     border-image: var(--gold-gradient) 1;
     border-radius: 20px;
-    padding: 2.5rem;
+    padding: 1.2rem;
     text-align: center;
     cursor: pointer;
     transition: all 0.4s ease;
@@ -383,7 +383,7 @@ body {
     overflow: hidden;
     animation: fadeInUp 1s ease-out 0.4s both;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-    min-height: 220px;
+    min-height: 150px;
     max-width: 520px;
     width: 100%;
 }
@@ -551,7 +551,7 @@ body {
     background: linear-gradient(135deg, var(--black-light) 0%, var(--black-lighter) 50%, var(--black-soft) 100%);
     border: 2px solid rgba(255, 215, 0, 0.3);
     border-radius: 15px;
-    padding: 3rem;
+    padding: 1.2rem;
     transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
@@ -583,8 +583,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 2rem;
-    gap: 2rem;
+    margin-bottom: 0.8rem;
+    gap: 1rem;
 }
 
 .item-name {
@@ -621,7 +621,7 @@ body {
 
 .item-description {
     color: var(--text-gray);
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.8rem;
     line-height: 1.8;
     font-size: 0.5rem;
 }
@@ -696,7 +696,7 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .header-bar {
-        min-height: 180px;
+        min-height: 90px;
     }
     
     .page {
@@ -705,31 +705,31 @@ body {
     
     .header-container {
         flex-direction: column;
-        gap: 0.8rem;
-        padding: 0.8rem 0.5rem;
+        gap: 0.3rem;
+        padding: 0.3rem 0.5rem;
     }
     
     .logo-image {
-        height: 99px; /* 10% larger for smaller screens */
+        height: 50px;
     }
     
     .logo-icon {
-        font-size: 4.2rem;
-    }
-    
-    .logo-text {
         font-size: 3rem;
     }
     
+    .logo-text {
+        font-size: 1.5rem;
+    }
+    
     .header-lang-btn {
-        width: 14px;
-        height: 14px;
-        font-size: 1rem;
+        width: 10px;
+        height: 10px;
+        font-size: 0.8rem;
         border: none;
     }
     
     .header-language-selector {
-        gap: 1.5rem;
+        gap: 0.6rem;
     }
     
     .welcome-title {
