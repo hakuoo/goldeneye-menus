@@ -54,11 +54,11 @@ body {
     border-bottom: 3px solid transparent;
     border-image: var(--gold-metallic) 1;
     z-index: 1000;
-    padding: 0.8rem 0;
+    padding: 0.4rem 0;
     transition: all 0.3s ease;
     box-shadow: 0 2px 20px var(--shadow-dark);
     height: auto;
-    min-height: 160px;
+    min-height: 80px;
 }
 
 .header-container {
@@ -68,8 +68,8 @@ body {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0.5rem 1rem;
-    gap: 0.6rem;
+    padding: 0.3rem 1rem;
+    gap: 0.3rem;
 }
 
 .logo-container {
@@ -88,9 +88,9 @@ body {
 
 .logo-image {
     /* keep aspect ratio, avoid stretching, and add slight padding */
-    height: 130px;
+    height: 100px;
     width: auto;
-    max-width: 430px;
+    max-width: 330px;
     object-fit: contain;
     display: block;
     padding: 0.5rem;
@@ -133,12 +133,12 @@ body {
 /* Header Language Selector */
 .header-language-selector {
     display: flex;
-    gap: 1.5rem;
+    gap: 0.8rem;
 }
 
 .header-lang-btn {
-    width: 56px;
-    height: 56px;
+    width: 52px;
+    height: 52px;
     border: none;
     outline: none;
     background: transparent;
@@ -151,13 +151,13 @@ body {
     position: relative;
     overflow: visible;
     padding: 0;
-    font-size: 4.5rem;
+    font-size: 4.2rem;
     line-height: 1;
     filter: none;
 }
 
 .header-lang-btn .flag-icon {
-    font-size: 4.5rem;
+    font-size: 4.2rem;
     z-index: 1;
     position: relative;
     line-height: 1;
@@ -375,7 +375,7 @@ body {
     border: 3px solid transparent;
     border-image: var(--gold-gradient) 1;
     border-radius: 20px;
-    padding: 2.5rem;
+    padding: 1.2rem;
     text-align: center;
     cursor: pointer;
     transition: all 0.4s ease;
@@ -383,7 +383,7 @@ body {
     overflow: hidden;
     animation: fadeInUp 1s ease-out 0.4s both;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-    min-height: 220px;
+    min-height: 140px;
     max-width: 520px;
     width: 100%;
 }
@@ -551,7 +551,7 @@ body {
     background: linear-gradient(135deg, var(--black-light) 0%, var(--black-lighter) 50%, var(--black-soft) 100%);
     border: 2px solid rgba(255, 215, 0, 0.3);
     border-radius: 15px;
-    padding: 3rem;
+    padding: 1rem;
     transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
@@ -583,8 +583,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 1.5rem;
-    gap: 2rem;
+    margin-bottom: 0.5rem;
+    gap: 0.7rem;
 }
 
 .item-name {
@@ -621,7 +621,7 @@ body {
 
 .item-description {
     color: var(--text-gray);
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     line-height: 1.8;
     font-size: 1.875rem;
 }
@@ -696,7 +696,7 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .header-bar {
-        min-height: 140px;
+        min-height: 70px;
     }
     
     .page {
@@ -705,31 +705,31 @@ body {
     
     .header-container {
         flex-direction: column;
-        gap: 0.4rem;
-        padding: 0.4rem 0.5rem;
+        gap: 0.2rem;
+        padding: 0.2rem 0.5rem;
     }
     
     .logo-image {
-        height: 100px;
+        height: 80px;
     }
     
     .logo-icon {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     
     .logo-text {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
     .header-lang-btn {
-        width: 42px;
-        height: 42px;
-        font-size: 3.4rem;
+        width: 40px;
+        height: 40px;
+        font-size: 3.2rem;
         border: none;
     }
     
     .header-language-selector {
-        gap: 1rem;
+        gap: 0.6rem;
     }
     
     .welcome-title {
@@ -804,27 +804,27 @@ body {
     }
     
     .menu-card {
-        padding: 2rem;
+        padding: 1rem;
     }
     
     .menu-item {
-        padding: 2.5rem;
+        padding: 0.9rem;
     }
     
     .item-name {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .item-description {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     
     .price-bgn {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
     
     .price-eur {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     
     .category-title {
