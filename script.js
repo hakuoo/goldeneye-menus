@@ -148,10 +148,12 @@ function displayMenu() {
                             <span class="price-eur">${priceEUR}</span>
                         </div>
                     </div>
-                    <p class="item-description">${description}</p>
-                    <div class="item-details">
-                        <span class="item-weight">${item.weight}</span>
-                        <span class="item-allergens">${getAllergensLabel()}: ${allergens}</span>
+                    <div class="item-description">
+                        ${description}
+                        <span class="item-weight">- ${item.weight}</span>
+                    </div>
+                    <div class="item-allergens">
+                        ${getAllergensLabel()}: ${allergens}
                     </div>
                 </div>
             `;

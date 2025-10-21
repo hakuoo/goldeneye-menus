@@ -82,6 +82,16 @@ body {
     padding: 0.5rem;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* ensure some space around the logo so it doesn't touch surrounding elements */
+    padding: 0.5rem;
+}
+
 .logo-container:hover {
     transform: scale(1.05);
 }
@@ -132,8 +142,18 @@ body {
 
 /* Header Language Selector */
 .header-language-selector {
+    position: fixed;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    gap: 0.8rem;
+    gap: 2rem;
+    z-index: 1001;
+    background: rgba(15, 15, 15, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    border: 1px solid rgba(242, 223, 128, 0.2);
 }
 
 .header-lang-btn {
@@ -624,27 +644,25 @@ body {
     margin-bottom: 0.5rem;
     line-height: 1.8;
     font-size: 1.875rem;
-}
-
-.item-details {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 0.5rem;
     flex-wrap: wrap;
-    gap: 1.5rem;
-    font-size: 1.6875rem;
+    align-items: center;
 }
 
 .item-weight {
     color: var(--text-gold);
     font-weight: 600;
     font-size: 1.875rem;
+    white-space: nowrap;
 }
 
 .item-allergens {
     color: var(--text-gray);
     font-style: italic;
-    font-size: 1.6875rem;
+    font-size: 0.844rem;
+    margin-top: 0.5rem;
+    display: block;
 }
 
 /* Animations */
@@ -729,7 +747,7 @@ body {
     }
     
     .header-language-selector {
-        gap: 0.6rem;
+        gap: 1.5rem;
     }
     
     .welcome-title {
@@ -825,6 +843,10 @@ body {
     
     .price-eur {
         font-size: 1.1rem;
+    }
+    
+    .item-allergens {
+        font-size: 0.7rem;
     }
     
     .category-title {
