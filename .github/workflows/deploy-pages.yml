@@ -4,12 +4,28 @@ on:
   push:
     branches: [ main, master ]
 
+# Explicit token permissions to allow pushes and Pages configuration
+permissions:
+  contents: write
+  pages: write
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Git diagnostics
+        run: |
+          git --version
+          git status --porcelain
+          git branch -a
+          git remote -v
+          git config --list
+          echo "GITHUB_WORKSPACE=$GITHUB_WORKSPACE"
 
       - name: Setup Node (for consistency, optional)
         uses: actions/setup-node@v5
