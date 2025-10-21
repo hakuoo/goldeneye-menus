@@ -4,55 +4,16 @@ on:
   push:
     branches: [ main, master ]
 
-# Explicit token permissions to allow pushes and Pages configuration
-permissions:
-  contents: write
-  pages: write
-  id-token: write
-
 jobs:
-  build-deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Git diagnostics
-        run: |
-          git --version
-          git status --porcelain
-          git branch -a
-          git remote -v
-          git config --list
-          echo "GITHUB_WORKSPACE=$GITHUB_WORKSPACE"
-
-      - name: Setup Node (for consistency, optional)
-        uses: actions/setup-node@v5
-        with:
-          node-version: '18'
-
-      - name: Prepare artifact directory
-        run: |
-          mkdir -p out
-          rsync -av --exclude '.git' --exclude '.github' --exclude '.gitignore' --exclude '.github/workflows' ./ out/
-
-      - name: Ensure GitHub Pages enabled
-        run: |
-          echo "Enabling GitHub Pages for repo: $GITHUB_REPOSITORY"
-          curl -sS -X POST \
-            -H "Accept: application/vnd.github+json" \
-            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-            -H "Content-Type: application/json" \
-            https://api.github.com/repos/${GITHUB_REPOSITORY}/pages \
-            -d '{"source":{"branch":"main","path":"/"}}' \
-            | jq . || true
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: out
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          exclude_assets: '.git,node_modules,.github,.gitignore,README.md'
