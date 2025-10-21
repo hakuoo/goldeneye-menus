@@ -38,6 +38,16 @@ jobs:
           mkdir -p out
           rsync -av --exclude '.git' --exclude '.github' --exclude '.gitignore' --exclude '.github/workflows' ./ out/
 
+      - name: Ensure GitHub Pages enabled
+        run: |
+          echo "Enabling GitHub Pages for repo: $GITHUB_REPOSITORY"
+          curl -sS -X PUT \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            https://api.github.com/repos/${GITHUB_REPOSITORY}/pages \
+            -d '{"source":{"branch":"gh-pages","path":"/"}}' \
+            | jq . || true
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
