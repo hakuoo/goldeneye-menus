@@ -59,6 +59,7 @@ body {
     box-shadow: 0 2px 20px var(--shadow-dark);
     height: auto;
     min-height: 80px;
+    position: relative;
 }
 
 .header-container {
@@ -142,8 +143,8 @@ body {
 
 /* Header Language Selector */
 .header-language-selector {
-    position: fixed;
-    top: 12px;
+    position: absolute;
+    top: 100%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -151,9 +152,10 @@ body {
     z-index: 1001;
     background: rgba(15, 15, 15, 0.85);
     backdrop-filter: blur(10px);
-    padding: 0.5rem 1.5rem;
+    padding: 0.8rem 1.5rem;
     border-radius: 50px;
     border: 1px solid rgba(242, 223, 128, 0.2);
+    margin-top: 0.5rem;
 }
 
 .header-lang-btn {
@@ -660,7 +662,7 @@ body {
 .item-allergens {
     color: var(--text-gray);
     font-style: italic;
-    font-size: 0.844rem;
+    font-size: 1.25rem;
     margin-top: 0.5rem;
     display: block;
 }
@@ -846,7 +848,7 @@ body {
     }
     
     .item-allergens {
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
     
     .category-title {

@@ -149,8 +149,7 @@ function displayMenu() {
                         </div>
                     </div>
                     <div class="item-description">
-                        ${description}
-                        <span class="item-weight">- ${item.weight}</span>
+                        <span>${item.weight}</span> - <span>${description}</span>
                     </div>
                     <div class="item-allergens">
                         ${getAllergensLabel()}: ${allergens}
