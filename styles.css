@@ -88,9 +88,9 @@ body {
 
 .logo-image {
     /* keep aspect ratio, avoid stretching, and add slight padding */
-    height: 85px;
+    height: 120px;
     width: auto;
-    max-width: 280px;
+    max-width: 400px;
     object-fit: contain;
     display: block;
     padding: 0.5rem;
@@ -137,8 +137,8 @@ body {
 }
 
 .header-lang-btn {
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     border: none;
     outline: none;
     background: transparent;
@@ -151,13 +151,13 @@ body {
     position: relative;
     overflow: visible;
     padding: 0;
-    font-size: 4rem;
+    font-size: 6rem;
     line-height: 1;
     filter: none;
 }
 
 .header-lang-btn .flag-icon {
-    font-size: 4rem;
+    font-size: 6rem;
     z-index: 1;
     position: relative;
     line-height: 1;
@@ -589,7 +589,7 @@ body {
 
 .item-name {
     font-family: 'Playfair Display', serif;
-    font-size: 1.75rem;
+    font-size: 2.625rem;
     background: var(--gold-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -604,26 +604,26 @@ body {
     flex-direction: column;
     align-items: flex-end;
     gap: 0.5rem;
-    font-size: 1.375rem;
+    font-size: 2.0625rem;
     font-weight: 600;
     white-space: nowrap;
 }
 
 .price-bgn {
     color: var(--gold);
-    font-size: 1.625rem;
+    font-size: 2.4375rem;
 }
 
 .price-eur {
     color: var(--text-gray);
-    font-size: 1.25rem;
+    font-size: 1.875rem;
 }
 
 .item-description {
     color: var(--text-gray);
     margin-bottom: 3rem;
     line-height: 1.8;
-    font-size: 1.25rem;
+    font-size: 1.875rem;
 }
 
 .item-details {
@@ -632,19 +632,19 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
-    font-size: 1.125rem;
+    font-size: 1.6875rem;
 }
 
 .item-weight {
     color: var(--text-gold);
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1.875rem;
 }
 
 .item-allergens {
     color: var(--text-gray);
     font-style: italic;
-    font-size: 1.125rem;
+    font-size: 1.6875rem;
 }
 
 /* Animations */
@@ -710,7 +710,7 @@ body {
     }
     
     .logo-image {
-        height: 175px;
+        height: 100px;
     }
     
     .logo-icon {
@@ -722,9 +722,9 @@ body {
     }
     
     .header-lang-btn {
-        width: 45px;
-        height: 45px;
-        font-size: 3.6rem;
+        width: 65px;
+        height: 65px;
+        font-size: 5.2rem;
         border: none;
     }
     
@@ -812,19 +812,19 @@ body {
     }
     
     .item-name {
-        font-size: 1.5rem;
+        font-size: 2.25rem;
     }
     
     .item-description {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     
     .price-bgn {
-        font-size: 1.3rem;
+        font-size: 1.95rem;
     }
     
     .price-eur {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     
     .category-title {
