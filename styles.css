@@ -137,8 +137,8 @@ body {
 }
 
 .header-lang-btn {
-    width: 26px;
-    height: 26px;
+    width: 16px;
+    height: 16px;
     border: none;
     outline: none;
     background: transparent;
@@ -151,13 +151,13 @@ body {
     position: relative;
     overflow: visible;
     padding: 0;
-    font-size: 1.9rem;
+    font-size: 1.2rem;
     line-height: 1;
     filter: none;
 }
 
 .header-lang-btn .flag-icon {
-    font-size: 1.9rem;
+    font-size: 1.2rem;
     z-index: 1;
     position: relative;
     line-height: 1;
@@ -589,7 +589,7 @@ body {
 
 .item-name {
     font-family: 'Playfair Display', serif;
-    font-size: 1rem;
+    font-size: 0.7rem;
     background: var(--gold-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -604,26 +604,26 @@ body {
     flex-direction: column;
     align-items: flex-end;
     gap: 0.5rem;
-    font-size: 0.75rem;
+    font-size: 0.55rem;
     font-weight: 600;
     white-space: nowrap;
 }
 
 .price-bgn {
     color: var(--gold);
-    font-size: 0.9rem;
+    font-size: 0.65rem;
 }
 
 .price-eur {
     color: var(--text-gray);
-    font-size: 0.7rem;
+    font-size: 0.5rem;
 }
 
 .item-description {
     color: var(--text-gray);
     margin-bottom: 1.5rem;
     line-height: 1.8;
-    font-size: 0.65rem;
+    font-size: 0.5rem;
 }
 
 .item-details {
@@ -632,19 +632,19 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
-    font-size: 0.55rem;
+    font-size: 0.45rem;
 }
 
 .item-weight {
     color: var(--text-gold);
     font-weight: 600;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
 }
 
 .item-allergens {
     color: var(--text-gray);
     font-style: italic;
-    font-size: 0.55rem;
+    font-size: 0.45rem;
 }
 
 /* Animations */
@@ -722,9 +722,9 @@ body {
     }
     
     .header-lang-btn {
-        width: 22px;
-        height: 22px;
-        font-size: 1.7rem;
+        width: 14px;
+        height: 14px;
+        font-size: 1rem;
         border: none;
     }
     
@@ -812,19 +812,19 @@ body {
     }
     
     .item-name {
-        font-size: 0.9rem;
+        font-size: 0.65rem;
     }
     
     .item-description {
-        font-size: 0.6rem;
+        font-size: 0.45rem;
     }
     
     .price-bgn {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
     
     .price-eur {
-        font-size: 0.5rem;
+        font-size: 0.45rem;
     }
     
     .category-title {
