@@ -88,9 +88,9 @@ body {
 
 .logo-image {
     /* keep aspect ratio, avoid stretching, and add slight padding */
-    height: 212px;
+    height: 85px;
     width: auto;
-    max-width: 700px;
+    max-width: 280px;
     object-fit: contain;
     display: block;
     padding: 0.5rem;
@@ -137,8 +137,8 @@ body {
 }
 
 .header-lang-btn {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     border: none;
     outline: none;
     background: transparent;
@@ -151,13 +151,13 @@ body {
     position: relative;
     overflow: visible;
     padding: 0;
-    font-size: 3.5rem;
+    font-size: 4rem;
     line-height: 1;
     filter: none;
 }
 
 .header-lang-btn .flag-icon {
-    font-size: 3.5rem;
+    font-size: 4rem;
     z-index: 1;
     position: relative;
     line-height: 1;
@@ -375,7 +375,7 @@ body {
     border: 3px solid transparent;
     border-image: var(--gold-gradient) 1;
     border-radius: 20px;
-    padding: 4.5rem;
+    padding: 2.25rem;
     text-align: center;
     cursor: pointer;
     transition: all 0.4s ease;
@@ -383,7 +383,7 @@ body {
     overflow: hidden;
     animation: fadeInUp 1s ease-out 0.4s both;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-    min-height: 450px;
+    min-height: 225px;
     max-width: 520px;
     width: 100%;
 }
@@ -551,7 +551,7 @@ body {
     background: linear-gradient(135deg, var(--black-light) 0%, var(--black-lighter) 50%, var(--black-soft) 100%);
     border: 2px solid rgba(255, 215, 0, 0.3);
     border-radius: 15px;
-    padding: 4.5rem;
+    padding: 6.75rem;
     transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
@@ -722,9 +722,9 @@ body {
     }
     
     .header-lang-btn {
-        width: 40px;
-        height: 40px;
-        font-size: 3rem;
+        width: 45px;
+        height: 45px;
+        font-size: 3.6rem;
         border: none;
     }
     
@@ -804,11 +804,11 @@ body {
     }
     
     .menu-card {
-        padding: 3.75rem;
+        padding: 1.875rem;
     }
     
     .menu-item {
-        padding: 3.75rem;
+        padding: 5.625rem;
     }
     
     .item-name {
