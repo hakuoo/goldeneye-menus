@@ -202,10 +202,10 @@ body {
 /* Floating Back Button - Liquid Glass Morphism Style */
 .floating-back-btn {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    top: 20px;
+    right: 20px;
     width: auto;
-    padding: 16px 24px;
+    padding: 12px 20px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
@@ -218,21 +218,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
-    min-height: auto;
-    height: 56px;
+    gap: 10px;
+    height: 50px;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 
         0 8px 24px rgba(212, 175, 55, 0.2),
         inset 0 1px 0 rgba(255, 255, 255, 0.4),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.1),
-        0 4px 12px rgba(0, 0, 0, 0.15);
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
     cursor: pointer;
     user-select: none;
     border: none;
     font-family: 'Source Sans Pro', sans-serif;
     z-index: 999;
-    transform: translateY(0) translateZ(0);
+    transform: translateZ(0);
     filter: url(#glass-distortion);
     will-change: transform;
     white-space: nowrap;
@@ -246,8 +244,7 @@ body {
     box-shadow: 
         0 12px 32px rgba(212, 175, 55, 0.3),
         inset 0 1px 0 rgba(255, 255, 255, 0.5),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.15),
-        0 6px 16px rgba(0, 0, 0, 0.2);
+        inset 0 -1px 0 rgba(0, 0, 0, 0.15);
 }
 
 .floating-back-btn:active {
@@ -775,11 +772,11 @@ body {
     }
     
     .floating-back-btn {
-        padding: 14px 20px;
+        padding: 10px 16px;
         font-size: 1.4rem;
-        height: 52px;
-        bottom: 20px;
-        right: 20px;
+        height: 48px;
+        top: 15px;
+        right: 15px;
     }
     
     .menu-selection {
