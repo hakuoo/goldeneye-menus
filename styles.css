@@ -571,7 +571,7 @@ body {
     position: relative;
     overflow: hidden;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
-    min-height: 200px;
+    min-height: 220px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -808,28 +808,28 @@ body {
     }
     
     .menu-items {
-        gap: 1.5rem;
+        gap: 1.8rem;
     }
     
     .menu-item {
-        padding: 1.2rem;
-        min-height: 200px;
+        padding: 1.5rem;
+        min-height: 220px;
     }
     
     .item-name {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
     
     .item-description {
-        font-size: 1.7rem;
+        font-size: 1.85rem;
     }
     
     .price-bgn {
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
     
     .price-eur {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
     
     .item-allergens {
