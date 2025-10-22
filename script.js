@@ -420,6 +420,14 @@ function animatePageTransition(pageId) {
             const newPage = document.getElementById(pageId);
             newPage.classList.add('active');
             
+            // Show/hide back button based on page
+            const backBtn = document.querySelector('.floating-back-btn');
+            if (pageId === 'alacarte-page') {
+                backBtn.style.display = 'flex';
+            } else {
+                backBtn.style.display = 'none';
+            }
+            
             // Animate new page in
             anime({
                 targets: newPage,
