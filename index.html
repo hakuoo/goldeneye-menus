@@ -16,6 +16,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- SVG Filters for Liquid Glass Effect -->
+    <svg style="display: none;">
+        <defs>
+            <filter id="glass-distortion">
+                <feTurbulence type="fractalNoise" baseFrequency="0.001 0.005" numOctaves="1" seed="17" result="noise" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" />
+                <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+            </filter>
+        </defs>
+    </svg>
+
     <!-- Header Bar -->
     <header class="header-bar">
         <div class="header-container">
@@ -80,13 +91,11 @@
             </div>
         </div>
         
-        <!-- Footer Back Button -->
-        <footer class="page-footer">
-            <button class="footer-back-btn" onclick="navigateToHub()">
-                <i class="fas fa-arrow-left"></i>
-                <span data-tr="back">Geri</span>
-            </button>
-        </footer>
+        <!-- Floating Back Button -->
+        <button class="floating-back-btn" onclick="navigateToHub()">
+            <i class="fas fa-arrow-left"></i>
+            <span data-tr="back">Geri</span>
+        </button>
     </main>
 
     <script src="menu-data.js"></script>
