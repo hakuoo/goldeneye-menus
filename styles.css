@@ -219,9 +219,11 @@ body {
     user-select: none;
     font-family: 'Source Sans Pro', sans-serif;
     z-index: 999;
-    filter: url(#glass-distortion);
     will-change: transform;
     white-space: nowrap;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .floating-back-btn:hover {
@@ -801,12 +803,15 @@ body {
         gap: 0.5rem;
     }
     
+    .menu-items {
+        gap: 1.2rem;
+    }
     .logo-text {
         font-size: 1.5rem;
     }
     
     .container {
-        padding: 1rem;
+        padding: 2rem 1.2rem;
     }
 }
 

@@ -15,6 +15,12 @@ function initializeApp() {
     const savedLanguage = localStorage.getItem('selectedLanguage') || 'tr';
     changeLanguage(savedLanguage);
     
+    // Initialize button visibility
+    const backBtn = document.querySelector('.floating-back-btn');
+    if (backBtn) {
+        backBtn.style.display = 'none';
+    }
+    
     // Add smooth animations
     addPageTransitions();
     
