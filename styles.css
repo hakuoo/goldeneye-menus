@@ -806,6 +806,31 @@ body {
     .menu-items {
         gap: 1.2rem;
     }
+    
+    .menu-item {
+        padding: 1.2rem;
+    }
+    
+    .item-name {
+        font-size: 2.2rem;
+    }
+    
+    .item-description {
+        font-size: 1.7rem;
+    }
+    
+    .price-bgn {
+        font-size: 2rem;
+    }
+    
+    .price-eur {
+        font-size: 1.6rem;
+    }
+    
+    .item-allergens {
+        font-size: 1.2rem;
+    }
+    
     .logo-text {
         font-size: 1.5rem;
     }
@@ -825,27 +850,27 @@ body {
     }
     
     .menu-item {
-        padding: 0.9rem;
+        padding: 1rem;
     }
     
     .item-name {
-        font-size: 1.8rem;
+        font-size: 2.4rem;
     }
     
     .item-description {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
     
     .price-bgn {
-        font-size: 1.5rem;
+        font-size: 2.2rem;
     }
     
     .price-eur {
-        font-size: 1.1rem;
+        font-size: 1.7rem;
     }
     
     .item-allergens {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     
     .category-title {
