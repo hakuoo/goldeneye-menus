@@ -202,18 +202,15 @@ body {
 /* Floating Back Button - Liquid Glass Morphism Style */
 .floating-back-btn {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    padding: 20px;
+    bottom: 30px;
+    right: 30px;
+    width: auto;
+    padding: 16px 24px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border-top: 1.5px solid rgba(255, 255, 255, 0.3);
-    border-left: 1.5px solid rgba(255, 255, 255, 0.2);
-    border-right: 1.5px solid rgba(255, 255, 255, 0.2);
-    border-radius: 24px 24px 0 0;
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
     color: var(--gold-1);
     text-decoration: none;
     font-weight: 700;
@@ -221,14 +218,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
-    min-height: 70px;
+    gap: 12px;
+    min-height: auto;
+    height: 56px;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 
-        0 -8px 24px rgba(212, 175, 55, 0.15),
+        0 8px 24px rgba(212, 175, 55, 0.2),
         inset 0 1px 0 rgba(255, 255, 255, 0.4),
         inset 0 -1px 0 rgba(0, 0, 0, 0.1),
-        0 -4px 12px rgba(0, 0, 0, 0.1);
+        0 4px 12px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     user-select: none;
     border: none;
@@ -237,24 +235,23 @@ body {
     transform: translateY(0) translateZ(0);
     filter: url(#glass-distortion);
     will-change: transform;
+    white-space: nowrap;
 }
 
 .floating-back-btn:hover {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.1) 100%);
-    border-top-color: rgba(255, 255, 255, 0.5);
-    border-left-color: rgba(255, 255, 255, 0.3);
-    border-right-color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(25px) saturate(200%);
     -webkit-backdrop-filter: blur(25px) saturate(200%);
     box-shadow: 
-        0 -12px 32px rgba(212, 175, 55, 0.25),
+        0 12px 32px rgba(212, 175, 55, 0.3),
         inset 0 1px 0 rgba(255, 255, 255, 0.5),
         inset 0 -1px 0 rgba(0, 0, 0, 0.15),
-        0 -6px 16px rgba(0, 0, 0, 0.15);
+        0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 .floating-back-btn:active {
-    transform: translateY(2px) translateZ(0);
+    transform: scale(0.95) translateZ(0);
 }
 
 .floating-back-btn i {
@@ -778,9 +775,11 @@ body {
     }
     
     .floating-back-btn {
-        padding: 16px 20px;
+        padding: 14px 20px;
         font-size: 1.4rem;
-        min-height: 65px;
+        height: 52px;
+        bottom: 20px;
+        right: 20px;
     }
     
     .menu-selection {
