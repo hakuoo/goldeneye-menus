@@ -59,7 +59,6 @@ body {
     box-shadow: 0 2px 20px var(--shadow-dark);
     height: auto;
     min-height: 80px;
-    position: relative;
 }
 
 .header-container {
@@ -143,19 +142,19 @@ body {
 
 /* Header Language Selector */
 .header-language-selector {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
     gap: 2rem;
-    z-index: 1001;
-    background: rgba(15, 15, 15, 0.85);
-    backdrop-filter: blur(10px);
-    padding: 0.8rem 1.5rem;
+    z-index: 100;
+    background: transparent;
+    backdrop-filter: none;
+    padding: 1.5rem 0;
     border-radius: 50px;
-    border: 1px solid rgba(242, 223, 128, 0.2);
-    margin-top: 0.5rem;
+    border: none;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(242, 223, 128, 0.2);
 }
 
 .header-lang-btn {

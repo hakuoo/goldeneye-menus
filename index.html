@@ -22,20 +22,20 @@
             <div class="logo-container" onclick="navigateToHub()">
                 <img src="qr logo.png" alt="Aurum Restaurant" class="logo-image">
             </div>
-            
-            <!-- Language Selector (flags only) -->
-            <div class="header-language-selector">
-                <button class="header-lang-btn active" onclick="changeLanguage('tr')" data-lang="tr">🇹🇷</button>
-                <button class="header-lang-btn" onclick="changeLanguage('en')" data-lang="en">🇺🇸</button>
-                <button class="header-lang-btn" onclick="changeLanguage('bg')" data-lang="bg">🇧🇬</button>
-                <button class="header-lang-btn" onclick="changeLanguage('el')" data-lang="el">🇬🇷</button>
-            </div>
         </div>
     </header>
 
     <!-- Hub Page -->
     <main id="hub-page" class="page active">
         <div class="container">
+            <!-- Language Selector -->
+            <div class="header-language-selector">
+                <button class="header-lang-btn active" onclick="changeLanguage('tr')" data-lang="tr">🇹🇷</button>
+                <button class="header-lang-btn" onclick="changeLanguage('en')" data-lang="en">🇺🇸</button>
+                <button class="header-lang-btn" onclick="changeLanguage('bg')" data-lang="bg">🇧🇬</button>
+                <button class="header-lang-btn" onclick="changeLanguage('el')" data-lang="el">🇬🇷</button>
+            </div>
+            
             <div class="welcome-section">
                 <h1 class="welcome-title" data-tr="welcome">Hoş Geldiniz</h1>
                 <p class="welcome-subtitle" data-tr="welcomeSubtitle">Aurum Restaurant'a</p>
@@ -67,6 +67,14 @@
     <!-- A la Carte Menu Page -->
     <main id="alacarte-page" class="page">
         <div class="container">
+            <!-- Language Selector -->
+            <div class="header-language-selector">
+                <button class="header-lang-btn active" onclick="changeLanguage('tr')" data-lang="tr">🇹🇷</button>
+                <button class="header-lang-btn" onclick="changeLanguage('en')" data-lang="en">🇺🇸</button>
+                <button class="header-lang-btn" onclick="changeLanguage('bg')" data-lang="bg">🇧🇬</button>
+                <button class="header-lang-btn" onclick="changeLanguage('el')" data-lang="el">🇬🇷</button>
+            </div>
+            
             <div id="menu-content" class="menu-content">
                 <!-- Menu items will be loaded here by JavaScript -->
             </div>
